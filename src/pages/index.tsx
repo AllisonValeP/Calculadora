@@ -17,38 +17,39 @@ export default function Home() {
   };
 
   return (
-    <main className="pt-20 flex flex-col items-center justify-center gap-8">
+    <main className="relative h-full pt-20 flex flex-col items-center justify-center gap-4 overflow-hidden">
       
 
       <div className="flex flex-row gap-8">
         <CustomButton buttonTitle="Masculino"/>
         <CustomButton buttonTitle="Feminino"/>
-      </div> 
-
-     
-     
-        <form>      
-         <input type="number" name="Idade" id="idade" required placeholder="Idade" 
-         className="bg-[#242424] text-white h-11 w-24 text-center text-xl
-          border-4 border-[#fff000] hover:border-[#e6258f] transition-all
-           duration-300  focus:border-[#e6258f] focus:outline-none" />        
-        </form>
-      <CustomSlider sliderTitle="Peso - kg"/>
-      <CustomSlider sliderTitle="Altura - cm"/>
+      </div>    
+       
+      <CustomSlider sliderTitle="Idade" defaultValue={0} minValue={16}/>
+      <CustomSlider sliderTitle="Peso - kg" defaultValue={0} maxValue={200} minValue={40}/>
+      <CustomSlider sliderTitle="Altura - cm" defaultValue={0} maxValue={250} minValue={130}/>
 
       <div className="h-16 w-36 text-center bg-gradient-to-r from-[#fff000]  to-[#e6258f]">           
               <button className="text-black h-full font-bold text-xl p-2 "> Calcular IMC </button>          
       </div>
 
-      <div className="text-white mt-9 ">
-        <h1 className="font-bold text-4xl mb-3">Seu IMC é</h1>
+      <div className="text-white flex flex-row pl-32 gap-7  self-start w-[600px] h-auto bg-gradient-to-r from-[#fff000] via-[#e6258f] to-transparent">
+        <h1 className="font-bold text-black text-4xl  bg-transparent">Seu IMC é</h1>     
+        <h1 className="flex flex-col justify-between  text-4xl text-center font-bold bg-transparent">23.85</h1>         
+      </div>
 
-        <div className="mx-auto p-[3px] bg-gradient-to-r from-[#fff000]  to-[#e6258f]">           
-          <h1 className="flex flex-col justify-between h-full text-4xl text-center font-bold p-2 bg-[#242424]">23.85</h1>        
+      <div className="text-white flex flex-row pl-32 gap-7  self-start w-[600px] h-auto bg-gradient-to-r from-[#fff000] via-[#e6258f] to-transparent">
+        <h1 className="font-bold text-black text-4xl  bg-transparent">Resultado</h1>     
+        <h1 className="flex flex-col justify-between  text-4xl text-center font-bold bg-transparent">0000</h1>         
+      </div>
+
+      <div className="text-white flex flex-row pl-32 gap-7  self-start w-[600px] h-auto bg-gradient-to-r from-[#fff000] via-[#e6258f] to-transparent">
+        <h1 className="font-bold text-black text-4xl  bg-transparent">Resultado</h1>     
+        <h1 className="flex flex-col justify-between  text-4xl text-center font-bold bg-transparent">0000</h1>         
       </div>
 
       <div>
-        <Dialog open={true} onClose={handleClose}>
+        <Dialog open={false} onClose={handleClose}>
           <DialogTitle color={'#fff000'}>Iridium</DialogTitle>
           <DialogContent>
             <DialogContentText color={'white'}>
@@ -89,7 +90,6 @@ export default function Home() {
         </Dialog>
       </div>
 
-      </div>
     </main>
   )
 }
