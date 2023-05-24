@@ -12,6 +12,11 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'futura-base' : ['Futura Std'],
+        'futura-ligth' : ['Futura Std light'],
+        'futura-extra-bold': ['Futura Std bold']
+      }
     },
   },
   plugins: [],

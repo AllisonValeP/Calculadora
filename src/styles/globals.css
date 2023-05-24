@@ -10,6 +10,62 @@
  
 }
 
+
+@font-face {
+  font-family: "Futura Std";
+  src: url('../../public/assets/fonts/FuturaStd-Bold.otf');
+}
+
+@font-face {
+  font-family: "Futura Std light";
+  src: url('../../public/assets/fonts/FuturaStd-Light.otf');
+}
+
+@font-face {
+  font-family: "Futura Std bold";
+  src: url('../../public/assets/fonts/FuturaStd-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: "Futura Std";
+  src: url('../../public/assets/fonts/FuturaStd-Bold.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura Std";
+  src: url('../../public/assets/fonts/FuturaStd-Light.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura Std";
+  src: url('../../public/assets/fonts/FuturaStd-ExtraBold.otf');
+  font-weight: 700;
+}
+
+
+  
+@font-face {
+  font-family: "Futura Std Cond";
+  src: url('../../public/assets/fonts/FuturaStd-CondensedBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: "Futura Std Cond";
+  src: url('../../public/assets/fonts/FuturaStd-Condensed.otf');
+  font-weight: normal;
+}
+  
+@font-face {
+  font-family: "Futura Std Cond";
+  src: url('../../public/assets/fonts/FuturaStd-CondensedLight.otf');
+  font-weight: lighter;
+}
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -27,8 +83,17 @@ input[type=number] {
 
 .MuiSlider-valueLabelCircle {
   background: transparent;
-
+  font-size: 1rem;
+  font-family: 'Futura Std light';
 }		
+
+@media only screen and (max-width: 550px) {
+  /* For desktop: */
+  .MuiSlider-valueLabelCircle{
+  font-size: 2rem;
+}
+}
+
 .MuiFormLabel-root, .Mui-focused  .MuiFormLabel-root, .MuiInputLabel-root, .MuiInputLabel-formControl, .MuiInputLabel-animated, .MuiInputLabel-shrink, .MuiInputLabel-standard, .MuiFormLabel-colorPrimary, .MuiFormLabel-filled, .MuiInputLabel-root, .MuiInputLabel-formControl, .MuiInputLabel-animated, .MuiInputLabel-shrink, .MuiInputLabel-standard, .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
   color:yellow
 }
@@ -37,9 +102,9 @@ background-color: azure;
 }
 
 
-.MuiTouchRipple-root {
+/* .MuiTouchRipple-root {
   background-color: blueviolet;
-}
+} */
 .MuiTouchRipple-root > span {
  color: white;
 }
