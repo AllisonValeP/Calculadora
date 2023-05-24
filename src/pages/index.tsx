@@ -23,11 +23,11 @@ export default function Home() {
   return (
     
       <main className="flex flex-col items-center justify-center gap-4 max-[550px]:w-[750px]">
-        <Header />
+        <Header headerTitle="ECTOMORFO" />
       <div className='w-max-[600px] p-5 w-full flex flex-col items-center'>
         <div className="flex flex-row gap-8">
-          <CustomButton buttonTitle="Masculino"/>
-          <CustomButton buttonTitle="Feminino"/>
+          <CustomButton buttonTitle="Masculino" buttonIcon="iconMale.svg"/>        
+          <CustomButton buttonTitle="Feminino" buttonIcon="iconFemale.svg"/>
         </div>    
         
         <CustomSlider sliderTitle="Idade" defaultValue={0} minValue={16}/>
