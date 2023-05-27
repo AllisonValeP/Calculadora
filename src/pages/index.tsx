@@ -5,6 +5,7 @@ import { Header } from "../components/Header"
 import Dialog from '@mui/material/Dialog';
 import { Button, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
+import { CustomModal } from "../components/CustomModal"
 import React from 'react';
 
 
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     
       <main className="flex flex-col items-center justify-center gap-4 max-[550px]:w-[750px]">
+        <CustomModal/>
         <Header headerTitle="ECTOMORFO" />
       <div className='w-max-[600px] p-5 w-full flex flex-col items-center'>
         <div className="flex flex-row gap-8">
