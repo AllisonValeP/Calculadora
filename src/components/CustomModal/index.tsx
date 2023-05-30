@@ -4,7 +4,7 @@ import { Content, Overlay, Title, Description,CustomForm, CustomFormInput, FormC
 
 export function CustomModal (){
   return(
-    <Dialog.Root >
+    <Dialog.Root defaultOpen>
     <Dialog.Trigger asChild>
       <button className="bg-gray-300">modal</button>
     </Dialog.Trigger>
